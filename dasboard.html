@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Traveloka Clone</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Traveloka</a>
+    <div>
+      <a href="#" class="text-white me-3 text-decoration-none">Promo</a>
+      <a href="#" class="text-white me-3 text-decoration-none">Pesanan</a>
+      <a href="#" class="btn btn-light btn-sm">Login</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="bg-primary text-white text-center py-5">
+  <div class="container">
+    <h1 class="fw-bold">Mau ke mana hari ini?</h1>
+    <p>Cari tiket pesawat, hotel, dan lainnya</p>
+  </div>
+</section>
+
+<!-- Search Tabs -->
+<div class="container">
+  <div class="card shadow p-4" style="margin-top:-50px; border-radius:15px;">
+
+    <!-- Tabs -->
+    <ul class="nav nav-tabs mb-3" id="myTab">
+      <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#pesawat">Pesawat</button></li>
+      <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#hotel">Hotel</button></li>
+      <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#kereta">Kereta</button></li>
+    </ul>
+
+    <!-- Tab Content -->
+    <div class="tab-content">
+
+      <!-- Pesawat -->
+      <div class="tab-pane fade show active" id="pesawat">
+        <div class="row g-3">
+          <div class="col-md-3"><input class="form-control" placeholder="Dari"></div>
+          <div class="col-md-3"><input class="form-control" placeholder="Ke"></div>
+          <div class="col-md-2"><input type="date" class="form-control"></div>
+          <div class="col-md-2"><input type="date" class="form-control"></div>
+          <div class="col-md-2 d-grid"><button class="btn btn-warning">Cari</button></div>
+        </div>
+      </div>
+
+      <!-- Hotel -->
+      <div class="tab-pane fade" id="hotel">
+        <div class="row g-3">
+          <div class="col-md-4"><input class="form-control" placeholder="Kota / Hotel"></div>
+          <div class="col-md-3"><input type="date" class="form-control"></div>
+          <div class="col-md-3"><input type="date" class="form-control"></div>
+          <div class="col-md-2 d-grid"><button class="btn btn-warning">Cari</button></div>
+        </div>
+      </div>
+
+      <!-- Kereta -->
+      <div class="tab-pane fade" id="kereta">
+        <div class="row g-3">
+          <div class="col-md-3"><input class="form-control" placeholder="Dari"></div>
+          <div class="col-md-3"><input class="form-control" placeholder="Ke"></div>
+          <div class="col-md-3"><input type="date" class="form-control"></div>
+          <div class="col-md-3 d-grid"><button class="btn btn-warning">Cari</button></div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+<!-- Menu Layanan -->
+<div class="container mt-5">
+  <div class="row text-center g-4">
+
+    <div class="col-6 col-md-3">
+      <div class="card p-3 shadow-sm">
+        <i class="bi bi-airplane fs-2"></i>
+        <p>Tiket Pesawat</p>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-3">
+      <div class="card p-3 shadow-sm">
+        <i class="bi bi-building fs-2"></i>
+        <p>Hotel</p>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-3">
+      <div class="card p-3 shadow-sm">
+        <i class="bi bi-train-front fs-2"></i>
+        <p>Kereta</p>
+      </div>
+    </div>
+
+    <div class="col-6 col-md-3">
+      <div class="card p-3 shadow-sm">
+        <i class="bi bi-car-front fs-2"></i>
+        <p>Sewa Mobil</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Promo Section -->
+<div class="container mt-5">
+  <h4 class="mb-3">Promo Spesial</h4>
+  <div class="row g-4">
+
+    <div class="col-md-4">
+      <div class="card shadow-sm">
+        <img src="https://source.unsplash.com/400x200/?beach" class="card-img-top">
+        <div class="card-body">
+          <h6>Liburan ke Bali</h6>
+          <p>Mulai dari Rp 1.200.000</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-sm">
+        <img src="https://source.unsplash.com/400x200/?hotel" class="card-img-top">
+        <div class="card-body">
+          <h6>Hotel Murah</h6>
+          <p>Diskon hingga 50%</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-sm">
+        <img src="https://source.unsplash.com/400x200/?flight" class="card-img-top">
+        <div class="card-body">
+          <h6>Tiket Pesawat Promo</h6>
+          <p>Mulai dari Rp 800.000</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
